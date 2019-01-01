@@ -1,0 +1,5 @@
+Cyberroam Login:
+./crclient -u 1641012274 -i wlp3s0
+
+Opening FireFox WebDev Version
+~/.local/share/umake/web/firefox-dev/firefox
