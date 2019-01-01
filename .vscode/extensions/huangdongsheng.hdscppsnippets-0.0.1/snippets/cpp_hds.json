@@ -1,0 +1,541 @@
+{
+	//for c/c++ part:----------------------------------------------
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for(i = 0;i < ${1:length};i++)",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "for(i = 0;i < length;i++){}"
+	},
+	"fo": {
+		"prefix": "fo",                    //prefix fo is very important,then "for" snippet is not the first word in list ,because "for" is c key word,prefix fo solve Solution
+		"body": [
+			"for(${1:index} = ${2:0};${1:index} < ${3:length};${1:index}++)",
+			"{",
+			"    $4",
+			"}"
+		],
+		"description": "for(){}"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for(${1:index} = ${2:0};${1:index} < ${3:length};${1:index}++)",
+			"{",
+			"    $4",
+			"}"
+		],
+		"description": "for(){}"
+	},
+	"do": {
+		"prefix": "do",
+		"body": [
+			"do",
+			"{",
+			"    $1",
+			"} while(${2:TRUE});"
+		],
+		"description": "do{}while();"
+	},
+	"dowhile": {
+		"prefix": "dowhile",
+		"body": [
+			"do",
+			"{",
+			"    $1",
+			"} while(${2:TRUE});"
+		],
+		"description": "do{}while();"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ($1)",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "add if(){}"
+	},
+	"if0": {
+		"prefix": "i",
+		"body": [
+			"if ($1)",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "add if(){}"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": [
+			"if($1)",
+			"{",
+			"    $2",
+			"}else",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "if{}else{}"
+	},
+	"el": {
+		"prefix": "el",
+		"body": [
+			"else",
+			"{",
+			"    $1",
+			"}"
+		],
+		"description": "else{}"
+	},
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"    $1",
+			"}"
+		],
+		"description": "else{}"
+	},
+	"elseif": {
+		"prefix": "elseif",
+		"body": [
+			"else if($1)",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "else if(){}"
+	},
+	"else if": {
+		"prefix": "else if",
+		"body": [
+			"else if($1)",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "else if(){}"
+	},
+	"elseifelse": {
+		"prefix": "elseifelse",
+		"body": [
+			"else if($1)",
+			"{",
+			"    $2",
+			"}else",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "else if(){}else{}"
+	},
+	"printf": {
+		"prefix": "pri",
+		"body": [
+			"printf(\"$1\\n\"$2);"
+		],
+		"description": "printf(\"msg\");"
+	},
+	"int i": {
+		"prefix": "int i",
+		"body": [
+			"int i = 0;",
+			"$1"
+		],
+		"description": "int i = 0;"
+	},
+	"inti": {
+		"prefix": "inti",
+		"body": [
+			"int i = 0;",
+			"$1"
+		],
+		"description": "int i = 0;"
+	},
+	"intn": {
+		"prefix": "intn",
+		"body": [
+			"int n = 0;",
+			"$1"
+		],
+		"description": "int n = 0;"
+	},
+	"int n": {
+		"prefix": "int n",
+		"body": [
+			"int n = 0;",
+			"$1"
+		],
+		"description": "int n = 0;"
+	},
+	"intj": {
+		"prefix": "'intj",
+		"body": [
+			"int j = 0;",
+			"$1"
+		],
+		"description": "int j = 0;"
+	},
+	"int j": {
+		
+		"prefix": "'int j",
+		"body": [
+			"int j = 0;",
+			"$1"
+		],
+		"description": "int j = 0;"
+	},
+	"char*": {
+		"prefix": "ch",
+		"body": [
+			"char* str = \"$1\""
+		],
+		"description": "char* str = \"msg\""
+	},
+	"char *": {
+		"prefix": "st",
+		"body": [
+			"char* str = \"$1\""
+		],
+		"description": "char* str = \"msg\""
+	},
+	"include": {
+		"prefix": "inc",
+		"body": [
+			"#include <$1>"
+		],
+		"description": "#include <file>"
+	},
+	"while": {
+		"prefix": "wh",
+		"body": [
+			"while(${1:true})",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "while(){}"
+	},
+	"mai": {
+		"prefix": "mai",
+		"body": [
+			"void main(int argc,char argc[])",
+			"{",
+			"    $1",
+			"}"
+		],
+		"description": "void main(int argc,char argc[]){}"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"void main(int argc,char argc[])",
+			"{",
+			"    $1",
+			"}"
+		],
+		"description": "void main(int argc,char argc[]){}"
+	},
+	"switch": {
+		"prefix": "sw",
+		"body": [
+			"switch($1){",
+			"{",
+			"    case $2:",
+			"        $3",
+			"        break;",
+			"    default:",
+			"        ",
+			"        break;",
+			"}"
+		],
+		"description": "switch(){}"
+	},
+	"switch2": {
+		"prefix": "switch",
+		"body": [
+			"switch($1){",
+			"{",
+			"    case $2:",
+			"        $3",
+			"        break;",
+			"    default:",
+			"        ",
+			"        break;",
+			"}"
+		],
+		"description": "switch(){}"
+	},
+	"case": {
+		"prefix": "ca",
+		"body": [
+			"case $1:",
+			"    $3",
+			"    break;"
+		],
+		"description": "case:break;"
+	},
+	"case2": {
+		"prefix": "case",
+		"body": [
+			"case $1:",
+			"    $3",
+			"    break;"
+		],
+		"description": "case:break;"
+	},
+	"add void fun(){}": {
+		"prefix": "vo",
+		"body": [
+			"void ${1:functionname}(${2:args})",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "add void functionname(args){}"
+	},
+	"add  fun(){}": {
+		"prefix": "fun",
+		"body": [
+			"${1:functionname}(${2:args})",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "add @funtionname(@arg){}"
+	},
+	"add fun(){}": {
+		"prefix": "fu",
+		"body": [
+			"${1:functionname}(${2:args})",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "add @funtionname(@arg){}"
+	},
+	"enum1": {
+		"prefix": "enum",
+		"body": [
+			"enum ${1:enumname}",
+			"{",
+			"    $2",
+			"};"
+		],
+		"description": "add enum name{}"
+	},
+	"ifdef": {
+		"prefix": "ifdef",
+		"body": [
+			"#ifdef ${1:MACRO}",
+			"    $2",
+			"#endif //${1:MACRO}"
+		],
+		"description":"add #ifdef #endif"
+	},
+	"ifelsedef": {
+		"prefix": "ifdefelse",
+		"body": [
+			"#ifdef ${1:MACRO}",
+			"    $2",
+			"#else",
+			"    ",
+			"#endif //${1:MACRO}"
+		],
+		"description":"add #ifdef #else #endif"
+	},
+	"ifndef":{
+		"prefix":"ifndef",
+		"body":[
+			"#ifdef ${1:MACRO}",
+			"    $2",
+			"#endif //${1:MACRO}"
+		],
+		"description":"add #ifndef #endif"
+	},
+
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"struct ${1:name}",
+			"{",
+			"    $2",
+			"};"
+		],
+		"description": "struct name{}"
+	},
+	"struct1": {
+		"prefix": "stru",
+		"body": [
+			"struct ${1:name}",
+			"{",
+			"    $2",
+			"};"
+		],
+		"description": "struct name{}"
+	},
+	"union": {
+		"prefix": "union",
+		"body": [
+			"union ${1:name}",
+			"{",
+			"    $2",
+			"};"
+		],
+		"description": "union name{}"
+	},
+	"sizeof": {
+		"prefix": "si",
+		"body": [
+			"sizeof(${1:name})"
+		],
+		"description": "sizeof(name)"
+	},
+	"size of": {
+		"prefix": "size",
+		"body": [
+			"sizeof(${1:name})"
+		],
+		"description": "sizeof(name)"
+	},
+	//only for c++ part:=====================================================================================================================================================
+	//=======================================================================================================================================================================
+	"cla": {
+		"prefix": "cla",
+		"body": [
+			"class ${1:MyClass}",
+			"{",
+			"public:",
+			"    ${1:MyClass}();",
+			"    ${1:MyClass}(${1:MyClass} &&) = default;",
+			"    ${1:MyClass}(const ${1:MyClass} &) = default;",
+			"    ${1:MyClass} &operator=(${1:MyClass} &&) = default;",
+			"    ${1:MyClass} &operator=(const ${1:MyClass} &) = default;",
+			"    ~${1:MyClass}();",
+			"",
+			"private:",
+			"    $2",
+			"};",
+			"",
+			"${1:MyClass}::${1:MyClass}()",
+			"{",
+			"}",
+			"",
+			"${1:MyClass}::~${1:MyClass}()",
+			"{",
+			"}"
+		],
+		"description": "class:{public:private:}"
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class ${1:MyClass}",
+			"{",
+			"public:",
+			"    ${1:MyClass}();",
+			"    ${1:MyClass}(${1:MyClass} &&) = default;",
+			"    ${1:MyClass}(const ${1:MyClass} &) = default;",
+			"    ${1:MyClass} &operator=(${1:MyClass} &&) = default;",
+			"    ${1:MyClass} &operator=(const ${1:MyClass} &) = default;",
+			"    ~${1:MyClass}();",
+			"",
+			"private:",
+			"    $2",
+			"};",
+			"",
+			"${1:MyClass}::${1:MyClass}()",
+			"{",
+			"}",
+			"",
+			"${1:MyClass}::~${1:MyClass}()",
+			"{",
+			"}"
+		],
+		"description": "class:{public:private:}"
+	},
+	
+	"namespace": {
+		"prefix": "namespace",
+		"body": [
+			"namespace ${1:MyNamespace}",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "namespace MyNamespace{}"
+	},
+	"try": {
+		"prefix": "try",
+		"body": [
+			"try",
+			"{",
+			"    $1",
+			"}",
+			"catch (const std::exception&)",
+			"{",
+			"    ",
+			"}"
+		],
+		"description": "try{}catch{}"
+	},
+	"cout": {
+		"prefix": "cout",
+		"body": [
+			"std::cout << \"$1\" << '\\n';"
+		],
+		"description": "std::cout << \"msg\" << '\\n';"
+	},
+	"cin": {
+		"prefix": "cin",
+		"body": [
+			"std::cin << $1;"
+		],
+		"description": "std::cin << name;"
+	},
+	"iostream": {
+		"prefix": "iost",
+		"body": [
+			"iostream"
+		],
+		"description": "iostream"
+	},
+	"static_cast": {
+		"prefix": "static_ca",
+		"body": [
+			"static_cast<$1>($2);"
+		],
+		"description": "static_cast<type>(obj);"
+	},
+	"dynamic_cast": {
+		"prefix": "dynamic_ca",
+		"body": [
+			"dynamic_cast<$1>($2);"
+		],
+		"description": "dynamic_cast<type>(obj);"
+	},
+	"const_cast": {
+		"prefix": "const_ca",
+		"body": [
+			"const_cast<$1>($2);"
+		],
+		"description": "const_cast<type>(obj);"
+	},
+	"reinterpret_cast": {
+		"prefix": "reint",
+		"body": [
+			"reinterpret_cast<$1>($2);"
+		],
+		"description": "reinterpret_cast<type>(obj);"
+	}
+
+
+
+}

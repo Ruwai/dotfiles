@@ -1,0 +1,40 @@
+{
+	"name": "HdsCppSnippets",
+	"publisher": "huangdongsheng",
+	"displayName": "Hds's C/C++Snippets",
+	"description": "Code snippets for C/C++",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "c",
+				"path": "./snippets/c_hds.json"
+			},
+			{
+				"language": "cpp",
+				"path": "./snippets/cpp_hds.json"
+			}
+		]
+	},
+	"galleryBanner": {
+		"color": "#E6E0EA",
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oooreadooo/HdsCppSnippets"
+	},
+	"icon": "images/cpp.png",
+	"license": "Check in License in the root folder",
+	"__metadata": {
+		"id": "1101499f-2492-4b91-8817-2c9abe3617ba",
+		"publisherId": "96345834-6346-4788-8528-77b088d367ab",
+		"publisherDisplayName": "huangdongsheng"
+	}
+}
